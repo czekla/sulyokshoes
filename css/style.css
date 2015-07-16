@@ -1,0 +1,16 @@
+html {
+    background: url("../images/abstract-21466_1920.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+body {
+    background-color: #ECE494;
+}
+.active-menu {
+    background-color: red;
+}
