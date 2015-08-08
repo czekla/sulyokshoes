@@ -9,8 +9,11 @@ require_once "./lang/$lang.php";
 <!DOCTYPE html>
 <html ng-app="SulyokShoes-app-<?=$lang?>">
     <head>
-        <meta charset="UTF-8">
-        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <title>Sulyok Shoes</title>
+        <meta name="description" content="My shoes are manufactured traditionally by hand, with original, specialised tools and utmost care."/>
+        <meta name="keywords" content="shoemaker, shoes, footwear, design, orthopaedic, manufacturer, custom-made, tailor-made, ready-made, boots"/>
+        <meta name="robots" content="index,follow">
         <link rel="stylesheet" href="css/style.css"/>
         <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.13/angular.min.js"></script>
         <script src="http://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.10/angular-ui-router.js"></script>
@@ -28,7 +31,7 @@ require_once "./lang/$lang.php";
             <input type="submit" value="en"/>
         </form>
         </div>
-        <div>
+        <div class="menu">
             <ul>
                 <li><a ui-sref="menu1" ui-sref-active="active-menu"><?=$menu1?></a></li>
                 <li><a ui-sref="menu2" ui-sref-active="active-menu"><?=$menu2?></a></li>

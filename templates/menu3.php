@@ -2,5 +2,4 @@
 session_start(); 
 $lang = $_SESSION["lang"];
 include_once "../lang/$lang.php";
-
-echo $content3;
+include_once "./menu3_$lang.php";

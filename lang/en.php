@@ -1,9 +1,9 @@
 <?php
 
-$menu1 = "About us";
+$menu1 = "Introduction";
 $menu2 = "Products";
-$menu2_1 = "Male models";
-$menu2_2 = "Female models";
+$menu2_1 = "Men's footwear";
+$menu2_2 = "Women's footwear";
 $menu3 = "Technology";
 $menu4 = "Contact";
 $content1 = "content1-en";

@@ -42,7 +42,7 @@ angular.module("SulyokShoes-app-en", ['ui.router', 'common'])
 
                 $stateProvider
                         .state('menu1', {
-                            url: '/Aboutus',
+                            url: '/Introduction',
                             templateUrl: './templates/menu1.php'
                         })
                         .state('menu2', {
@@ -51,12 +51,12 @@ angular.module("SulyokShoes-app-en", ['ui.router', 'common'])
                         })
                         .state('menu2.sub1', {
                             parent: 'menu2',
-                            url: '/Malemodels',
+                            url: '/Mensfootwear',
                             templateUrl: './templates/menu2_1.php'
                         })
                         .state('menu2.sub2', {
                             parent: 'menu2',
-                            url: '/Femalemodels',
+                            url: '/Womensfootwear',
                             templateUrl: './templates/menu2_2.php'
                         })
                         .state('menu3', {
@@ -67,11 +67,11 @@ angular.module("SulyokShoes-app-en", ['ui.router', 'common'])
                             url: '/Contact',
                             templateUrl: './templates/menu4.php'
                         });
-                        
 
-                $urlRouterProvider.otherwise('menu1');
+
+                $urlRouterProvider.otherwise('Introduction');
             }]);
-        
+
 angular.module("common", [])
         .directive("routerhref", function ($compile) {
             return {
@@ -82,4 +82,14 @@ angular.module("common", [])
                     element.append(el);
                 }
             };
-        });
+        })
+        .run(['$rootScope', '$state', '$stateParams',
+            function ($rootScope, $state, $stateParams) {
+                $rootScope.$state = $state;
+                $rootScope.$stateParams = $stateParams;
+                $rootScope.$on('$stateChangeStart', function (event, toState, toParams, fromState, fromPatams) {
+                     console.info("fromstate", fromState);
+                    console.info("tostate", toState);
+                });
+            }
+        ]);
