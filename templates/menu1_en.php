@@ -1,5 +1,6 @@
 <div class="introduction">
-    <p>
+    <img src="./images/pic/IMG_0738.JPG" class="profil"/>
+    <p class="devider">
         My name is László Sulyok and I have been making shoes for 
         nearly thirty years. I was born in 1962, graduated in a 
         footwear industry trade school in 1981 and got my license 

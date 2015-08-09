@@ -1,0 +1,53 @@
+.flag {
+    position: relative;
+    margin: 5px;
+    width: 50px;  
+    height: 25px;
+    font-size: 62.5%;  
+    font-family: Verdana; 
+    border: 3px solid #fff;
+    -webkit-box-shadow: 0 0 2px 2px rgba(20,20,20,.1);
+    cursor: pointer;
+}
+.flag-hu {
+    background-image: url("../images/hu.png");
+    background-size:  50px 25px;
+    background-position: center center;
+}
+.flag-gb{
+    background-image: url("../images/gb.png");
+    background-size:  50px 25px;
+    background-position: center center;
+}
+.flag:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: -3px;
+    left: -3px;
+    width: 56px;
+    height: 31px;
+    z-index: 2;
+    background-image: 
+        -webkit-gradient(
+        linear, 
+        0% 30%, 
+        50% top, 
+        color-stop(0%,rgba(255,255,255,0)), 
+        color-stop(40%,rgba(255,255,255,0)), 
+        color-stop(90%,rgba(255,255,255,.3)), 
+        color-stop(100%,rgba(255,255,255,0))),
+
+        -webkit-gradient(
+        linear, 
+        50% 30%, 
+        100% top, 
+        color-stop(0%,rgba(224,225,225,0)), 
+        color-stop(25%,rgba(225,225,225,.3)), 
+        color-stop(50%,rgba(224,225,225,0)), 
+        color-stop(80%,rgba(224,225,225,.3)), 
+        color-stop(100%,rgba(224,225,225,0)));
+
+    background-size: 200%;
+    background-position: right;
+}

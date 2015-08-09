@@ -16,16 +16,25 @@ angular.module("SulyokShoes-app-hu", ['ui.router', 'common'])
                         .state('menu2.sub1', {
                             parent: 'menu2',
                             url: '/Ferfimodellek',
-                            templateUrl: './templates/menu2_1.php'
+                            templateUrl: './templates/menu2_1.php',
+                            controller: function () {
+                                $('.isotope a').touchTouch();
+                            }
                         })
                         .state('menu2.sub2', {
                             parent: 'menu2',
                             url: '/Noimodellek',
-                            templateUrl: './templates/menu2_2.php'
+                            templateUrl: './templates/menu2_2.php',
+                            controller: function () {
+                                $('.isotope a').touchTouch();
+                            }
                         })
                         .state('menu3', {
                             url: '/Technologia',
-                            templateUrl: './templates/menu3.php'
+                            templateUrl: './templates/menu3.php',
+                            controller: function () {
+                                $('.isotope a').touchTouch();
+                            }
                         })
                         .state('menu4', {
                             url: '/Kapcsolat',
@@ -52,16 +61,25 @@ angular.module("SulyokShoes-app-en", ['ui.router', 'common'])
                         .state('menu2.sub1', {
                             parent: 'menu2',
                             url: '/Mensfootwear',
-                            templateUrl: './templates/menu2_1.php'
+                            templateUrl: './templates/menu2_1.php',
+                            controller: function () {
+                                $('.isotope a').touchTouch();
+                            }
                         })
                         .state('menu2.sub2', {
                             parent: 'menu2',
                             url: '/Womensfootwear',
-                            templateUrl: './templates/menu2_2.php'
+                            templateUrl: './templates/menu2_2.php',
+                            controller: function () {
+                                $('.isotope a').touchTouch();
+                            }
                         })
                         .state('menu3', {
                             url: '/Technology',
-                            templateUrl: './templates/menu3.php'
+                            templateUrl: './templates/menu3.php',
+                            controller: function () {
+                                $('.isotope a').touchTouch();
+                            }
                         })
                         .state('menu4', {
                             url: '/Contact',
@@ -88,8 +106,6 @@ angular.module("common", [])
                 $rootScope.$state = $state;
                 $rootScope.$stateParams = $stateParams;
                 $rootScope.$on('$stateChangeStart', function (event, toState, toParams, fromState, fromPatams) {
-                     console.info("fromstate", fromState);
-                    console.info("tostate", toState);
                 });
             }
         ]);
