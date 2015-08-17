@@ -1,5 +1,5 @@
 <div class="products">
-    <p>
+    <h2>
         Cipők a megrendeléstől számítva 5-7 héten belül elkészülnek.
-    </p>
+    </h2>
 </div>

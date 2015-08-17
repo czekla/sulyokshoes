@@ -1,5 +1,5 @@
 <div class="products">
-    <p>
+    <h2>
         The shoes and boots are ready to ship within 5-7 weeks from the order placed.
-    </p>
+    </h2>
 </div>

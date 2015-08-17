@@ -1,7 +1,7 @@
 <div class="technology">
-    <p>
-        Cipőimet hagyományosan kézzel eredeti, különleges cipészszerszámokkal, aprólékos munkával készítem. 
-    </p>
+    <h2>
+        Cipőimet hagyományosan kézzel eredeti, különleges cipészszerszámokkal, <br/>aprólékos munkával készítem. 
+    </h2>
     <div class="isotope clearfix">
         <?php
         foreach ($array as $image) {

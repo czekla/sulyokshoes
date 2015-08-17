@@ -1,7 +1,7 @@
 <div class="technology">
-    <p>
-        My shoes are manufactured traditionally by hand, with original, specialised tools and utmost care.
-    </p>
+    <h2>
+        My shoes are manufactured traditionally by hand, with original, <br/>specialised tools and utmost care.
+    </h2>
     <div class="isotope clearfix">
         <?php
         foreach ($array as $image) {
