@@ -5,6 +5,7 @@ $(function () {
             $menu = $('.ac_menu'),
             $mainNav = $menu.find('ul:first'),
             $menuItems = $mainNav.children('li'),
+            $offset = $menu.offset().top;
             $ItemImages = new Array();
 
     $menuItems.each(function (i) {
@@ -40,6 +41,7 @@ $(function () {
                                 $el_title = $item.children('a:first'),
                                 el_image = $el_title.attr('data-bg');
                         $el_title.bind('click.Menu', function (e) {
+                            //$('html, body').stop().animate({scrollTop: $offset}, 1200, 'easeInOutQuad');
                             showItemImage(el_image);
                             return false;
                         });
