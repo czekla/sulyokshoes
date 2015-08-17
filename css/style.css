@@ -89,18 +89,25 @@ h5 a:hover {
     color: #ffffff;
     margin-top: 15px;
 }
-#header h1 a {
-    font: 400 150px/115px 'Dorsa', sans-serif;
+#header h1 {
+    font-family: 'Cabin Sketch', cursive;
+    font-size: 150px;
+    line-height: 115px;
     color: #ffffff;
     text-transform: uppercase;
-    display: inline-block;
-    height: 177px;
-}
-#header h1 a span {
     display: block;
-    font: 30px/30px 'Dosis', sans-serif;
+    height: 180px;
+    cursor: default;
+    letter-spacing: -8px;
+}
+#header h1 span {
+    display: block;
+    font-family: 'Courgette', cursive;
+    font-size: 30px;
+    line-height: 30px;
     margin-top: 28px;
     text-transform: none;
+    letter-spacing: 1px;
 }
 #header nav {
     margin-top: 53px;
@@ -172,8 +179,9 @@ h5 a:hover {
 .sf-menu > li > a {
     color: #8A7912;
     font-size: 36px;
+    line-height: 38px;
     margin-left: 29px;
-    font-family: 'Dosis', sans-serif;
+    font-family: 'Architects Daughter', cursive;
     margin-bottom: 30px;
     position: relative;
 }

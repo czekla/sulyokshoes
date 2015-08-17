@@ -14,6 +14,11 @@ require_once "./lang/$lang.php";
         <meta name="description" content="My shoes are manufactured traditionally by hand, with original, specialised tools and utmost care."/>
         <meta name="keywords" content="shoemaker, shoes, footwear, design, orthopaedic, manufacturer, custom-made, tailor-made, ready-made, boots"/>
         <meta name="robots" content="index,follow"/>
+        
+        <link href='http://fonts.googleapis.com/css?family=Courgette' rel='stylesheet' type='text/css'/>
+        <link href='http://fonts.googleapis.com/css?family=Cabin+Sketch' rel='stylesheet' type='text/css'/>
+        <link href='http://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'/>
+        
         <link rel="stylesheet" href="css/grid.css"/>
         <link rel="stylesheet" href="css/style.css"/>
         <link rel="stylesheet" href="css/touchTouch.css"/>
@@ -50,7 +55,7 @@ require_once "./lang/$lang.php";
                 <div class="container">
                     <div class="row">
                         <div class="grid_12">
-                            <h1><a href="index.php">Sulyok Shoes<span>Hand made by László Sulyok</span></a></h1>
+                            <h1 class="unselectable">Sulyok Shoes<span>Hand made by László Sulyok</span></h1>
                             <nav class="ac_menu">
                                 <ul class="sf-menu">
                                     <li><a ui-sref="menu1" ui-sref-active="current" data-bg="images/cipo/cipo3.jpg"><?= $menu1 ?></a></li>
