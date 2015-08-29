@@ -7,7 +7,10 @@ angular.module("SulyokShoes-app-hu", ['ui.router', 'common'])
                 $stateProvider
                         .state('menu1', {
                             url: '/Bemutatkozas',
-                            templateUrl: './templates/menu1.php'
+                            templateUrl: './templates/menu1.php',
+                            controller: function () {
+                                initJssor();
+                            }
                         })
                         .state('menu2', {
                             url: '/Termekbemutato',
@@ -52,7 +55,10 @@ angular.module("SulyokShoes-app-en", ['ui.router', 'common'])
                 $stateProvider
                         .state('menu1', {
                             url: '/Introduction',
-                            templateUrl: './templates/menu1.php'
+                            templateUrl: './templates/menu1.php',
+                            controller: function () {
+                                initJssor();
+                            }
                         })
                         .state('menu2', {
                             url: '/Products',
