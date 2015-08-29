@@ -641,6 +641,7 @@ p {
     color: #7d261a;
     -webkit-transition: color 0.5s ease;
     transition: color 0.5s ease;
+    cursor: pointer;
 }
 @media only screen and (max-width: 1199px) {
     #toTop {
