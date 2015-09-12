@@ -32,6 +32,14 @@ angular.module("SulyokShoes-app-hu", ['ui.router', 'common'])
                                 $('.isotope a').touchTouch();
                             }
                         })
+                        .state('menu2.sub3', {
+                            parent: 'menu2',
+                            url: '/Extrak',
+                            templateUrl: './templates/menu2_3.php',
+                            controller: function () {
+                                $('.isotope a').touchTouch();
+                            }
+                        })
                         .state('menu3', {
                             url: '/Technologia',
                             templateUrl: './templates/menu3.php',
@@ -76,6 +84,14 @@ angular.module("SulyokShoes-app-en", ['ui.router', 'common'])
                             parent: 'menu2',
                             url: '/Womensfootwear',
                             templateUrl: './templates/menu2_2.php',
+                            controller: function () {
+                                $('.isotope a').touchTouch();
+                            }
+                        })
+                        .state('menu2.sub3', {
+                            parent: 'menu2',
+                            url: '/Extras',
+                            templateUrl: './templates/menu2_3.php',
                             controller: function () {
                                 $('.isotope a').touchTouch();
                             }

@@ -3,8 +3,8 @@ session_start();
 $lang = $_SESSION["lang"];
 include_once "../lang/$lang.php";
 
-$dir = "../kepek/ferficipok";
-$image_dir = "./kepek/ferficipok";
+$dir = "../kepek/extrak";
+$image_dir = "./kepek/extrak";
 $i = 0;
 $array = array();
 if ($handle = opendir($dir)) {
@@ -20,6 +20,6 @@ usort($array, function($a, $b) {
     return filemtime($a) < filemtime($b);
 });
 
-include_once "./menu2_1_$lang.php";
+include_once "./menu2_3_$lang.php";
 
 unset($array);
