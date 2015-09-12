@@ -17,7 +17,8 @@ if ($handle = opendir($dir)) {
     closedir($handle);
 }
 usort($array, function($a, $b) {
-    return filemtime($a) < filemtime($b);
+    $dir = "../kepek/noicipok/";
+    return filemtime($dir.$a) < filemtime($dir.$b);
 });
 
 include_once "./menu2_2_$lang.php";
